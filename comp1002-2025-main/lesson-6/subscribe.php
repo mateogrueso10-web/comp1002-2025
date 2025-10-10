@@ -17,14 +17,9 @@
 		</header>
 		<!-- Page-level main content -->
 
-			 <nav>
-				<ul>
-					<li><a href="index.php">Home</a></li>
-					<li><a href="red.php">Red Blocks</a></li>
-					<li><a href="blue.php">Blue Blocks</a></li>
-					<li><a href="yellow.php">Yellow Blocks</a></li>
-				</ul>
-			</nav>
+			 <?php
+include("includes/nav.php");
+?>
 		<main>
 			<section>
 				<h3>Thank You for Subscribing</h3>
