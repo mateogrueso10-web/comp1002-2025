@@ -52,9 +52,9 @@ main aside {
 	background-repeat: no-repeat;
 	background-position: top left;
 */
-.external-link {
+a[rel="external"] {
 	padding-left: 20px;
-	background-image: url("../images/new.png");
+	background-image: url("../images/external-link.png");
 	background-repeat: no-repeat;
 	background-position: top left;
 }
