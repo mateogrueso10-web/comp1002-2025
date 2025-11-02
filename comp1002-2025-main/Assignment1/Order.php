@@ -22,3 +22,24 @@
  <main>
     <h2>Customize Your Perfect Pizza!</h2>
     <p>Fill out the form below to build your dream pizza. We’ll get it ready fresh and fast!</p>
+
+    <form action="confirmation.php" method="post">
+    <!-- CUSTOMER INFO -->
+      <fieldset>
+        <legend>Customer Information</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required />
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" rows="3" placeholder="Enter your full address here..."></textarea>
+
+        <label for="delivery-date">Preferred Delivery Date:</label>
+        <input type="date" id="delivery-date" name="delivery-date" />
+      </fieldset>
