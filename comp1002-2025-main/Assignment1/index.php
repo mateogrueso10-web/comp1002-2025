@@ -13,6 +13,7 @@
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="Menu.php">Menu</a></li>
+                <li><a href="Order.php">Order Form</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>

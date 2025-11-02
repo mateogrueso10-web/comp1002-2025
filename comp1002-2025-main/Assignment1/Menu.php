@@ -14,6 +14,7 @@
                 <!--the links to go to each page-->
                 <li><a href="index.php">Home</a></li>
                 <li><a href="Menu.php">Menu</a></li>
+                <li><a href="Order.php">Order Form</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -51,6 +52,10 @@
         <li>Cauliflower Crust (Gluten Free)</li>
       </ul>
     </section>
+
+    <p>
+      Want to build your own? Head over to our <a href="order.html">Order Form</a> to customize your pizza!
+    </p>
 
 </main>
 </body>
