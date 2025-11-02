@@ -77,13 +77,63 @@
         <label for="stuffed">Cauliflower Crust (Gluten Free)</label>
 
         <label>Toppings:</label>
+
+        <label>Meat Options:</label>
         <div>
           <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni" /> <label for="pepperoni">Pepperoni</label><br>
-          <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms" /> <label for="mushrooms">Mushrooms</label><br>
-          <input type="checkbox" id="onions" name="toppings[]" value="onions" /> <label for="onions">Onions</label><br>
-          <input type="checkbox" id="bacon" name="toppings[]" value="bacon" /> <label for="bacon">Bacon</label><br>
-          <input type="checkbox" id="pineapple" name="toppings[]" value="pineapple" /> <label for="pineapple">Pineapple</label>
+          <input type="checkbox" id="Sausage" name="toppings[]" value="Sausage" /> <label for="Sausage">Sausage</label><br>
+          <input type="checkbox" id="Chicken" name="toppings[]" value="Chicken" /> <label for="Chicken">Chicken</label><br>
+          <input type="checkbox" id="bacon" name="toppings[]" value="bacon" /> <label for="bacon">Ham</label><br>
+          <input type="checkbox" id="Anchovies" name="toppings[]" value="Anchovies" /> <label for="Anchovies">Anchovies</label>
+          <input type="checkbox" id="Beef" name="toppings[]" value="Beef" /> <label for="Beef">Beef</label>
+
         </div>
+        <label>Veggies Options:</label>
+        <div>
+        <div>
+            <input type="checkbox" id="mushrooms" name="veggies[]" value="Mushrooms">
+            <label for="mushrooms">Mushrooms</label><br>
+
+            <!-- Onions with color choice -->
+            <input type="checkbox" id="onions-red" name="veggies[]" value="Red Onions">
+            <label for="onions-red">Onions (Red)</label><br>
+            <input type="checkbox" id="onions-yellow" name="veggies[]" value="Yellow Onions">
+            <label for="onions-yellow">Onions (Yellow)</label><br>
+
+            <!-- Olives -->
+            <input type="checkbox" id="olives-black" name="veggies[]" value="Black Olives">
+            <label for="olives-black">Olives (Black)</label><br>
+            <input type="checkbox" id="olives-green" name="veggies[]" value="Green Olives">
+            <label for="olives-green">Olives (Green)</label><br>
+
+            <!-- Bell peppers -->
+            <input type="checkbox" id="bell-green" name="veggies[]" value="Green Bell Peppers">
+            <label for="bell-green">Bell Peppers (Green)</label><br>
+            <input type="checkbox" id="bell-red" name="veggies[]" value="Red Bell Peppers">
+            <label for="bell-red">Bell Peppers (Red)</label><br>
+
+            <!-- Tomatoes -->
+            <input type="checkbox" id="tomatoes-sliced" name="veggies[]" value="Sliced Tomatoes">
+            <label for="tomatoes-sliced">Tomatoes (Sliced)</label><br>
+            <input type="checkbox" id="tomatoes-cherry" name="veggies[]" value="Cherry Tomatoes">
+            <label for="tomatoes-cherry">Tomatoes (Cherry)</label><br>
+
+            <!-- Other veggies -->
+            <input type="checkbox" id="spinach" name="veggies[]" value="Spinach">
+            <label for="spinach">Spinach</label><br>
+
+            <input type="checkbox" id="garlic-fresh" name="veggies[]" value="Fresh Garlic">
+            <label for="garlic-fresh">Garlic (Fresh)</label><br>
+            <input type="checkbox" id="garlic-roasted" name="veggies[]" value="Roasted Garlic">
+            <label for="garlic-roasted">Garlic (Roasted)</label><br>
+
+            <input type="checkbox" id="pineapple" name="veggies[]" value="Pineapple">
+            <label for="pineapple">Pineapple</label><br>
+
+            <input type="checkbox" id="jalapenos" name="veggies[]" value="Jalapeños">
+            <label for="jalapenos">Jalapeños</label>
+          </div>
+
 
         <label for="special">Special Instructions:</label>
         <textarea id="special" name="special" rows="3" placeholder="Example: no onions, extra cheese..."></textarea>
