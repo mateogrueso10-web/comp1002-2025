@@ -89,9 +89,35 @@
         <textarea id="special" name="special" rows="3" placeholder="Example: no onions, extra cheese..."></textarea>
       </fieldset>
 
+    <!-- ORDER TYPE -->
+      <fieldset>
+        <legend>Order Type</legend>
+
+        <input type="radio" id="takeout" name="order-type" value="takeout" checked />
+        <label for="takeout">Take-out</label>
+
+        <input type="radio" id="delivery" name="order-type" value="delivery" />
+        <label for="delivery">Delivery</label>
+
+        <input type="radio" id="eat-in" name="order-type" value="eat-in" />
+        <label for="eat-in">Eat-in</label>
+      </fieldset>
+
       <!-- SUBMIT/RESET BUTTONS -->
       <div style="text-align:center; margin-top: 2rem;">
         <button type="submit">Submit Order</button>
         <button type="reset">Reset</button>
       </div>
     </form>
+
+
+    <p style="margin-top:2rem;">
+      Need help deciding? Check out our <a href="menu.html">Menu</a> for inspiration!
+    </p>
+  </main>
+
+    <footer>
+    <p>&copy; 2025 Mateo’s Pizza Co. | Built with ❤️ and HTML</p>
+  </footer>
+</body>
+</html>
