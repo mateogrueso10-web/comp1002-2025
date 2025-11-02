@@ -30,5 +30,15 @@
         <li><strong>Hawaiian</strong> – Ham, pineapple, and mozzarella</li>
       </ul>
     </section>
+
+    <!-- some gourmet Pizza's-->
+    <section>
+      <h3>Gourmet Pizzas</h3>
+      <ul>
+        <li><strong>BBQ Chicken</strong> – Grilled chicken, BBQ sauce, red onions, and cheese</li>
+        <li><strong>Veggie Delight</strong> – Peppers, onions, mushrooms, olives, and spinach</li>
+        <li><strong>Meat Lover’s</strong> – Pepperoni, sausage, bacon, and ham</li>
+      </ul>
+    </section>
 </main>
 </body>
