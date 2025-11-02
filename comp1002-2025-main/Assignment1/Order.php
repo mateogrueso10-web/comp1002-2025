@@ -10,6 +10,9 @@
   <header>
     <h1>Order Your Pizza</h1>
   </header>
+      <!-- set the form to post to confirmation.php -->
+      <form action="confirmation.php" method="post">
+        <!--the links to go to each page-->
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
@@ -91,46 +94,46 @@
         <label>Veggies Options:</label>
         <div>
         <div>
-            <input type="checkbox" id="mushrooms" name="veggies[]" value="Mushrooms">
+            <input type="checkbox" id="mushrooms" name="toppings[]" value="Mushrooms">
             <label for="mushrooms">Mushrooms</label><br>
 
             <!-- Onions with color choice -->
-            <input type="checkbox" id="onions-red" name="veggies[]" value="Red Onions">
+            <input type="checkbox" id="onions-red" name="toppings[]" value="Red Onions">
             <label for="onions-red">Onions (Red)</label><br>
-            <input type="checkbox" id="onions-yellow" name="veggies[]" value="Yellow Onions">
+            <input type="checkbox" id="onions-yellow" name="toppings[]" value="Yellow Onions">
             <label for="onions-yellow">Onions (Yellow)</label><br>
 
             <!-- Olives -->
-            <input type="checkbox" id="olives-black" name="veggies[]" value="Black Olives">
+            <input type="checkbox" id="olives-black" name="toppings[]" value="Black Olives">
             <label for="olives-black">Olives (Black)</label><br>
-            <input type="checkbox" id="olives-green" name="veggies[]" value="Green Olives">
+            <input type="checkbox" id="olives-green" name="toppings[]" value="Green Olives">
             <label for="olives-green">Olives (Green)</label><br>
 
             <!-- Bell peppers -->
-            <input type="checkbox" id="bell-green" name="veggies[]" value="Green Bell Peppers">
+            <input type="checkbox" id="bell-green" name="toppings[]" value="Green Bell Peppers">
             <label for="bell-green">Bell Peppers (Green)</label><br>
-            <input type="checkbox" id="bell-red" name="veggies[]" value="Red Bell Peppers">
+            <input type="checkbox" id="bell-red" name="toppings[]" value="Red Bell Peppers">
             <label for="bell-red">Bell Peppers (Red)</label><br>
 
             <!-- Tomatoes -->
-            <input type="checkbox" id="tomatoes-sliced" name="veggies[]" value="Sliced Tomatoes">
+            <input type="checkbox" id="tomatoes-sliced" name="toppings[]" value="Sliced Tomatoes">
             <label for="tomatoes-sliced">Tomatoes (Sliced)</label><br>
-            <input type="checkbox" id="tomatoes-cherry" name="veggies[]" value="Cherry Tomatoes">
+            <input type="checkbox" id="tomatoes-cherry" name="toppings[]" value="Cherry Tomatoes">
             <label for="tomatoes-cherry">Tomatoes (Cherry)</label><br>
 
             <!-- Other veggies -->
-            <input type="checkbox" id="spinach" name="veggies[]" value="Spinach">
+            <input type="checkbox" id="spinach" name="toppings[]" value="Spinach">
             <label for="spinach">Spinach</label><br>
 
-            <input type="checkbox" id="garlic-fresh" name="veggies[]" value="Fresh Garlic">
+            <input type="checkbox" id="garlic-fresh" name="toppings[]" value="Fresh Garlic">
             <label for="garlic-fresh">Garlic (Fresh)</label><br>
-            <input type="checkbox" id="garlic-roasted" name="veggies[]" value="Roasted Garlic">
+            <input type="checkbox" id="garlic-roasted" name="toppings[]" value="Roasted Garlic">
             <label for="garlic-roasted">Garlic (Roasted)</label><br>
 
-            <input type="checkbox" id="pineapple" name="veggies[]" value="Pineapple">
+            <input type="checkbox" id="pineapple" name="toppings[]" value="Pineapple">
             <label for="pineapple">Pineapple</label><br>
 
-            <input type="checkbox" id="jalapenos" name="veggies[]" value="Jalapeños">
+            <input type="checkbox" id="jalapenos" name="toppings[]" value="Jalapeños">
             <label for="jalapenos">Jalapeños</label>
           </div>
 
@@ -166,6 +169,7 @@
     </p>
   </main>
 
+  <!-- FOOTER -->
     <footer>
     <p>&copy; 2025 Mateo’s Pizza Co. | Built with ❤️ and HTML</p>
   </footer>

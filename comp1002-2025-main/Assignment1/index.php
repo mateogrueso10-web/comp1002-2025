@@ -39,6 +39,8 @@
     </p> <!-- adding the menu to this paragraph for accesiblity -->
     </section>
 
+  <!-- FOOTER -->
+
   <footer>
     <p>&copy; 2025 Mateo’s Pizza Co. | All Rights Reserved</p>
   </footer>
