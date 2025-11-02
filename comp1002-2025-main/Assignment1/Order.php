@@ -88,3 +88,10 @@
         <label for="special">Special Instructions:</label>
         <textarea id="special" name="special" rows="3" placeholder="Example: no onions, extra cheese..."></textarea>
       </fieldset>
+
+      <!-- SUBMIT/RESET BUTTONS -->
+      <div style="text-align:center; margin-top: 2rem;">
+        <button type="submit">Submit Order</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
