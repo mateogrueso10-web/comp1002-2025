@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mateo’s Pizza | Order Now</title>
-  <link rel="stylesheet" href="css/style.css" />
+		<link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -84,8 +84,8 @@
           <input type="checkbox" id="Sausage" name="toppings[]" value="Sausage" /> <label for="Sausage">Sausage</label><br>
           <input type="checkbox" id="Chicken" name="toppings[]" value="Chicken" /> <label for="Chicken">Chicken</label><br>
           <input type="checkbox" id="bacon" name="toppings[]" value="bacon" /> <label for="bacon">Ham</label><br>
-          <input type="checkbox" id="Anchovies" name="toppings[]" value="Anchovies" /> <label for="Anchovies">Anchovies</label>
-          <input type="checkbox" id="Beef" name="toppings[]" value="Beef" /> <label for="Beef">Beef</label>
+          <input type="checkbox" id="Anchovies" name="toppings[]" value="Anchovies" /> <label for="Anchovies">Anchovies</label><br>
+          <input type="checkbox" id="Beef" name="toppings[]" value="Beef" /> <label for="Beef">Beef</label><br>
 
         </div>
         <label>Veggies Options:</label>
