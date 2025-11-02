@@ -40,5 +40,15 @@
         <li><strong>Meat Lover’s</strong> – Pepperoni, sausage, bacon, and ham</li>
       </ul>
     </section>
+
+    <section>
+      <h3>Crust Options</h3>
+      <ul>
+        <li>Thin Crust</li>
+        <li>Deep Dish</li>
+        <li>Stuffed Crust</li>
+        <li>Cauliflower Crust (Gluten Free)</li>
+      </ul>
+    </section>
 </main>
 </body>
