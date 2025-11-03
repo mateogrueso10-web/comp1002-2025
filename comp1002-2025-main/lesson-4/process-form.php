@@ -11,7 +11,7 @@
 		</header>
 		<main>
 			<h2>Account Information and Settings Updated</h2>
-<?php
+
     /* All form elements must be checked - that required information is present and that all form data
     is in the correct format. Security checks must also be made before database queries are made */
 
@@ -25,16 +25,13 @@
 	//echo('<p>Thank you, ' .$fname. ' ' .$lname. '!</p>');
 	// STEP 19: Update the above paragraph to now include the last name
 
-	echo('<p>The Alert Settings you have chosen include the following notifications:</p>
-	<ul>');
+	echo('<p>Thank you, ' .$fname. ' ' .$lname. '!</p>');
 		// STEP 21: The checkboxes for the Alert Settings will be sent as an array (as there could be more than one option checked by the user - so we need to loop through each item with a FOREACH loop)
-		foreach ($alert as $item){
-			echo('<li>' .$item '</li>');
-		};
+		echo('<p>Your alert settings have been updated to include the following options:</p>');
 
 
 	echo('</ul>');
-?>
+
 		</main>
         <footer>
             <p><small>©PayDude Inc. All rights reserved</small></p>
