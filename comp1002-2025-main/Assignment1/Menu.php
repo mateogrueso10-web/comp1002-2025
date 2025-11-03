@@ -9,8 +9,9 @@
 <body>
     <header>
       <!-- Pizza logo image -->
+       <a href="index.php">
         <img src="images/pizza logo.png" alt="Mateo’s Pizza Logo" class="logo" width="100" height="100">
-        <h1>Menu</h1>
+      </a>        <h1>Menu</h1>
         <nav>
             <ul>
                 <!--the links to go to each page-->

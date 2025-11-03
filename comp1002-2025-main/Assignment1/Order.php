@@ -11,8 +11,9 @@
     <h1>Order Your Pizza</h1>
   </header>
       <!-- Pizza logo image -->
-      <img src="images/pizza logo.png" alt="Mateo’s Pizza Logo" class="logo" width="100" height="100">
-      <!-- set the form to post to confirmation.php -->
+       <a href="index.php">
+        <img src="images/pizza logo.png" alt="Mateo’s Pizza Logo" class="logo" width="100" height="100">
+      </a>      <!-- set the form to post to confirmation.php -->
       <form action="confirmation.php" method="post">
         <!--the links to go to each page-->
         <nav>

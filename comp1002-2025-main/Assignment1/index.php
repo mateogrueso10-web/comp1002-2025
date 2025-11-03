@@ -9,7 +9,9 @@
 <body>
     <header>
       <!-- Pizza logo image -->
+       <a href="index.php">
         <img src="images/pizza logo.png" alt="Mateo’s Pizza Logo" class="logo" width="100" height="100">
+      </a>
         <h1>Mat's Pizza</h1>
         <nav>
             <ul>
