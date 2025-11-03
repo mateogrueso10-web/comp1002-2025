@@ -23,13 +23,32 @@
         </nav>
     </header>
     <section id="home">
-    <h2>Welcome to Mat's Pizza!</h2> <!-- first header -->
-        <p>
+  <section class="Home-Section-1">
+    <h2>Welcome to Mat's Pizza!</h2> 
+    <!-- first header -->
+     <p>
         Your favorite place for delicious homemade pizza.
         At Mateo’s Pizza, we serve delicious handcrafted pizzas made with fresh dough and quality toppings.
         Whether you like a crispy thin crust or a deep dish loaded with cheese, we’ve got you covered!
-        </p>
+    </p>
+       <h3>Our Best Sellers</h3>
+  <div class="gallery">
+    <figure>
+    <img src="images/pepperoni.jpg" alt="Pepperoni Pizza"  width="200" height="150" class="home-pizza">
+    <figcaption>Pepperoni</figcaption>
+    </figure>
+    <figure>
+    <img src="images/hawaiian.jpg" alt="Hawaiian  Pizza" width="200" height="150" class="home-pizza">
+    <figcaption>Hawaiian</figcaption>
+    </figure>
+    <figure>
+    <img src="images/Cheese.jpg" alt="Classic Cheese Pizza" width="200" height="150" class="home-pizza">
+    <figcaption>Classic Cheese</figcaption>
+    </figure>
+  </div>
 
+</section>
+<div class="Home-Section-2">
     <h3> Made with Promise</h3> <!-- Second header -->
     <ul>
       <li>Made from fresh ingredients daily</li>
@@ -40,6 +59,8 @@
     <p>
       Ready to order? Visit our <a href="Menu.php">Menu</a> and create your dream pizza today!
     </p> <!-- adding the menu to this paragraph for accesiblity -->
+
+    </div>
     </section>
 
   <!-- FOOTER -->

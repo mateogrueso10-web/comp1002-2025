@@ -41,6 +41,17 @@ main {
 nav {
   background-color: #ff7675;
   text-align: center;
+.home-pizza {
+  /* make the whole figure move to the right and keep caption with image */
+  float: right;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  background: #fffefc;
+  padding: 0.4rem;
+  max-width: 260px; /* keeps figure from getting too wide */
+}
   padding: 0.75rem;
 }
 
@@ -166,5 +177,27 @@ img {
   max-width: 100px;     /* keep it visually appropriate on small screens */
   height: auto;         /* preserve aspect ratio */
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  /*stack the images on the right */
+  flex-direction: row;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.Home-Section-2 {
+  text-align: center;
+}
+
+.Home-Section-1 {
+  text-align: center;
+}
+
+
+
 
 
