@@ -159,4 +159,12 @@ img {
   margin: 1rem 0;
 }
 
+/* Center site logo (uses class="logo" on the <img>) */
+.logo {
+  display: block;       /* makes margin auto work horizontally */
+  margin: 0.5rem auto;  /* vertical spacing + horizontal center */
+  max-width: 100px;     /* keep it visually appropriate on small screens */
+  height: auto;         /* preserve aspect ratio */
+}
+
 

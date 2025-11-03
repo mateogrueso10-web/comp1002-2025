@@ -9,6 +9,8 @@
 <body>
 
   <header>
+    <!-- Pizza logo image -->
+    <img src="images/pizza logo.png" alt="Mateo’s Pizza Logo" class="logo" width="100" height="100">
     <h1>Mateo’s Pizza</h1>
     <p>Thank you for your order!</p>
   </header>
