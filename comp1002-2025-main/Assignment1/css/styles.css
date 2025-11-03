@@ -28,14 +28,7 @@ header, footer {
   padding: 1rem 0;
 }
 
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding: 2rem;
-}
+
 
 /* --- Navigation Bar --- */
 nav {
@@ -76,7 +69,7 @@ fieldset {
   border-radius: 10px;
   margin-bottom: 1.5rem;
   padding: 1rem 1.5rem;
-  background-color: #fffefc;
+  background-color: #f2f4f2;
 }
 
 legend {
@@ -195,6 +188,60 @@ img {
 
 .Home-Section-1 {
   text-align: center;
+}
+
+/* --- Menu Page Specific Styles --- */
+
+/* Layout container for menu */
+.menu-container {
+  display: flex;
+  justify-content: space-between; /* text left, image right */
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Text section on the left */
+/* White background box for text */
+.menu-text {
+  flex: 1;
+  background-color: #ffffff;        /* white background */
+  border-radius: 12px;              /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);  /* soft shadow */
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  border: 1px solid #ddd;           /* light outline */
+}
+
+.menu-text h2 {
+  color: #e63946; /* pizza red accent */
+  margin-bottom: 20px;
+  border-bottom: 3px solid #e63946;
+  display: inline-block;
+}
+
+.menu-text h3 {
+  color: #1d3557;
+  margin-top: 25px;
+}
+
+/* Image section on the right */
+.menu-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 3px solid #e63946;
 }
 
 
