@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <a href="index.php">
+    <a href="index.html">
       <img src="images/pizza logo.png" alt="Mateo’s Pizza Logo" class="logo" width="100" height="100">
     </a>
     <h1>Thank You!</h1>
