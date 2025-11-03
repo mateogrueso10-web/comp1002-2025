@@ -244,7 +244,90 @@ img {
   border: 3px solid #e63946;
 }
 
+/* --- Contact Page Specific Styles --- */
 
+/* White box for contact form */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 40px;
+}
+.contact-box {
+  flex: 1;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 1px solid #ddd;
+}
+.contact-box h2 {
+  color: #e63946;
+  margin-bottom: 10px;
+}
 
+.contact-box p {
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Form styling */
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.form-buttons {
+  margin-top: 20px;
+}
+
+.btn-submit,
+.btn-reset {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-submit {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.btn-submit:hover {
+  background-color: #d62828;
+}
+
+.btn-reset {
+  background-color: #f1f1f1;
+  color: #333;
+  margin-left: 10px;
+}
+
+.btn-reset:hover {
+  background-color: #e0e0e0;
+}
 
 
