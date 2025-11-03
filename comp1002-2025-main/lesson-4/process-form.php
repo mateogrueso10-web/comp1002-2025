@@ -1,69 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Edit Payment Information - PayDude™</title>
-    <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-    <header>
-        <h1>PayDude™</h1>
-    </header>
-    <main>
-        <h2>Account Information and Settings Updated</h2>
+	<head>
+		<meta charset="utf-8" />
+		<title>Edit Payment Information - PayDude™</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>PayDude™</h1>
+		</header>
+		<main>
+			<h2>Account Information and Settings Updated</h2>
+<?php
+    /* All form elements must be checked - that required information is present and that all form data
+    is in the correct format. Security checks must also be made before database queries are made */
 
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+	// STEP 16: Set a variable to capture the first name from the submitted form, using the GET array and the fname value
+	$fname = $_GET["fname"];
+	// STEP 18: Set a variable to capture the last name from the submitted form, using the GET array and the lname value
+	$lname = $_GET["lname"];
+	// STEP 20: Capture the Alert Settings from the submitted form, using the GET array and the alert value
+	$alert = $_GET["alert"];
+	// STEP 17: Output a friendly message to confirm that everything went well, including the $fname variable in a paragraph
+	//echo('<p>Thank you, ' .$fname. ' ' .$lname. '!</p>');
+	// STEP 19: Update the above paragraph to now include the last name
+	echo('<p> alert setting updated:</p>');
+		// STEP 21: The checkboxes for the Alert Settings will be sent as an array (as there could be more than one option checked by the user - so we need to loop through each item with a FOREACH loop)
+		echo('<p>Your alert settings have been updated to include the following options:</p><ul>');
 
-            // Simple sanitize function
-            function clean_input($data) {
-                return htmlspecialchars(trim($data));
-            }
 
-            // Collect and clean all form data
-            $fname = clean_input($_POST["fname"] ?? "");
-            $lname = clean_input($_POST["lname"] ?? "");
-            $address = clean_input($_POST["address"] ?? "");
-            $prov = clean_input($_POST["prov"] ?? "");
-            $phone = clean_input($_POST["phone"] ?? "");
-            $email = clean_input($_POST["email"] ?? "");
-            $password = clean_input($_POST["password"] ?? "");
-            $question = clean_input($_POST["question"] ?? "");
-            $mfa = clean_input($_POST["mfa"] ?? "");
+	echo('</ul>');
 
-            // Validate required fields
-            if (empty($fname) || empty($lname)) {
-                echo "<p>Error: First and last name are required.</p>";
-            } else {
-                echo "<p>Thank you, <strong>$fname $lname</strong>! Your account information has been updated.</p>";
+?>
 
-                echo "<ul>";
-                echo "<li>Address: $address</li>";
-                echo "<li>Province: $prov</li>";
-                echo "<li>Phone: $phone</li>";
-                echo "<li>Email: $email</li>";
-                echo "<li>MFA Method: " . ($mfa ?: "None selected") . "</li>";
-                echo "<li>Security Question: " . ($question ?: "Not provided") . "</li>";
-                echo "</ul>";
-            }
-
-            // Handle alert settings (checkboxes)
-            if (!empty($_POST["alert"]) && is_array($_POST["alert"])) {
-                echo "<h3>Alert Preferences:</h3><ul>";
-                foreach ($_POST["alert"] as $setting) {
-                    echo "<li>" . clean_input($setting) . "</li>";
-                }
-                echo "</ul>";
-            } else {
-                echo "<p>No alert settings selected.</p>";
-            }
-        } else {
-            echo "<p>Error: Invalid form submission.</p>";
-        }
-        ?>
-    </main>
-    <footer>
-        <p><small>©PayDude Inc. All rights reserved</small></p>
-    </footer>
-</body>
+		</main>
+        <footer>
+            <p><small>©PayDude Inc. All rights reserved</small></p>
+        </footer>
+	</body>
 </html>
