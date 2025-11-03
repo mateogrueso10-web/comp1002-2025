@@ -68,8 +68,8 @@
     </section>
 
     <div style="text-align:center; margin-top: 2rem;">
-      <a href="index.php"><button>Back to Home</button></a>
-      <a href="Order.php"><button>Place Another Order</button></a>
+      <a href="index.html"><button>Back to Home</button></a>
+      <a href="Order.html"><button>Place Another Order</button></a>
     </div>
   </main>
 

@@ -26,7 +26,7 @@
     <div class="thankyou-box">
       <h2>Thanks for Reaching Out! 🍕</h2>
       <p>We’ve received your message and will get back to you shortly.</p>
-      <p>While you wait, why not check out our <a href="Menu.php">Menu</a> or place your next <a href="Order.php">Order</a>?</p>
+      <p>While you wait, why not check out our <a href="Menu.html">Menu</a> or place your next <a href="Order.html">Order</a>?</p>
     </div>
 
     <div class="thankyou-image">
