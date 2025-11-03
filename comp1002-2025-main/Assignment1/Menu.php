@@ -57,7 +57,7 @@
       </section>
 
       <p>
-        Want to build your own? Head over to our <a href="order.html">Order Form</a> to customize your pizza!
+        Want to build your own? Head over to our <a href="Order.php">Order Form</a> to customize your pizza!
       </p>
     </div>
 
