@@ -14,10 +14,10 @@
     <h1>Thank You!</h1>
     <nav>
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="Menu.php">Menu</a></li>
-        <li><a href="Order.php">Order Form</a></li>
-        <li><a href="contact.php">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Order.html">Order Form</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
