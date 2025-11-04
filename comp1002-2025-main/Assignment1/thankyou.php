@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You - Mat’s Pizza</title>
   <link href="css/styles.css" rel="stylesheet" />
+  <!--Icon setting-->
+  <link rel="icon" type="image/png" href="images/pizza logo.png">
 </head>
 <body>
   <header>
