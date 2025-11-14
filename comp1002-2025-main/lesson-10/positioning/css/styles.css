@@ -6,14 +6,16 @@
 
 /* STEP 1: Style the ASIDE element - change the background-color, and the width properties */
 aside {
-
+	background-color: lightgray;
+	width: 150px;
+	position: static;
 }
 
 /* STEP 2: Change the position property of the ASIDE element - static | relative | absolute | sticky - proceed to STEP 2a below */
 
 /* STEP 2a: Postion static - this is the default, and the element is within the 'flow' of the page content */
 aside {
-
+	position: static;
 }
 
 /* STEP 2b: Position relative - this leaves the element in the page 'flow', but allows you to offset it's position with the top, right, bottom, and left properties. */

@@ -1,59 +1,119 @@
-
+@charset "utf-8";
 /* STEP 3: Set character encoding (must be first line of file) */
+
+
 /* STEP 4a: Set the border properties on the DIV#container - border-width, border-style, border-color */
 div#container {
-
+  border-width: 10px;
+  border-style: solid;
+  border-color: black;
 }
+
 /* STEP 4b: Control one of the four borders independently of the others - try border-top-style */
-
-/* STEP 4c: Apply shorthand to bottom border (border-bottom-width) using the clock rule (TRBL) */
-
-/* STEP 5a: Set padding values on the DIV#container element - set individual padding values, then use shorthand with the clock rule again (TRBL) */
 div#container {
-
-  margin: 5% auto;
-
+  border-top-style: dashed;
 }
-/* STEP 5b: Apply a background-image to the same element (controlling background-repeat, background-position, and background-size) */
 
-/* STEP 5c: Instead, apply the same background-image to the BODY, and apply a background-color to the DIV#container */
+/* STEP 4c: Apply shorthand to bottom border (border-bottom-width) using the clock rule (TRBL)
+   Example: border-width: top right bottom left;
+*/
+div#container {
+  border-width: 10px 10px 20px 10px; /* bottom set to 20px */
+}
+
+
+/* STEP 5a: Set padding values on the DIV#container element - set individual padding values,
+   then use shorthand with the clock rule again (TRBL) */
+div#container {
+  padding: 50px 20px 40px 10px; /* padding TRBL */
+  margin: 5% auto;
+  background-color: lemonchiffon;
+  background-image: url('../images/stucco.jpg');
+}
+
+/* STEP 5b: Apply a background-image to the same element (controlling repeat, position, size) */
+div#container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* STEP 5c: APPLY background-image to BODY instead */
 body {
-
+  background-image: url('../images/stucco.jpg');
+  background-size: cover;
+  background-repeat: repeat;
   font-size: 150%;
 }
 
+div#container {
+  background-color: lemonchiffon; /* moved here per step */
+}
+
+
 /* STEP 6a: Control the width of the DIV#container with a fixed unit (px) */
 div#container {
-
+  width: 800px;
 }
-/* STEP 6b: Change the width to a relative unit of measure (%) */
 
-/* STEP 6c: Use an elastic unit, instead (em) and change the base font-size on the BODY element */
+/* STEP 6b: Change the width to a relative unit (%) */
+div#container {
+  width: 80%;
+}
 
-/* STEP 7a: Set the width above back to a fixed unit, then adjust the height so the the content no longer fits */
+/* STEP 6c: Use an elastic unit (em) and change the base font-size on BODY element */
+body {
+  font-size: 18px; /* base size changed */
+}
 
-/* STEP 7b: Apply various values to the overflow property to see how to handle content that doesn't fit it's container */
+div#container {
+  width: 50em;
+}
 
-/* STEP 8a: Change the display property of the H1 EM element to block, then to inline-block (default for EM is inline) */
+
+/* STEP 7a: Set width back to fixed, adjust height so content no longer fits */
+div#container {
+  width: 600px;
+  height: 100px;
+}
+
+/* STEP 7b: Apply various overflow values (example: auto) */
+div#container {
+  overflow: auto; /* try auto, hidden, visible, scroll */
+}
+
+
+/* STEP 8a: Change display of H1 EM to block then inline-block */
 h1 em {
-
+  display: inline-block; /* first block, then inline-block */
 }
-/* STEP 8b: Manipulate the visibility of the H1 EM element (visibility and display are different) */
 
-/* STEP 10: Comment out the width and display settings below for the MAIN SECTION elements, and use Flexbox, instead - set display to 'flex' on the MAIN element (the container of the SECTION elements) - learn more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* STEP 8b: Manipulate visibility */
+h1 em {
+  visibility: visible; /* try hidden to hide without shifting layout */
+}
+
+
+/* STEP 10: Use Flexbox on MAIN */
 main {
-
+  display: flex;
+  justify-content: space-between;
 }
 
-/* STEP 8c: Set the width of the 3 MAIN SECTION elements to 30% and arrange them with the display property using inline-block to arrange them side-by-side */
 
+/* STEP 8c: Set width of MAIN SECTION elements to 30%, arranged side-by-side */
 main section {
+  width: 30%;
   border: 5px solid blue;
-
 }
 
+/* color second box border red */
 main section:nth-of-type(2) {
   border-color: red;
 }
 
-/* STEP 9: float the SECTION P IMG element to the left, then right */
+
+/* STEP 9: float the SECTION P IMG element to left, then right */
+main section p img {
+  float: left;  /* or right */
+}
