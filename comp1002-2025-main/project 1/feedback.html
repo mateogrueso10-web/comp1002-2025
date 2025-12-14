@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Coca-Cola | Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <script>
+        // JavaScript for feedback form
+        document.addEventListener('DOMContentLoaded', function() {
+            const feedbackForm = document.getElementById('feedbackForm');
+
+            feedbackForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent page reload
+
+                // Get form values
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const rating = document.getElementById('rating').value;
+                const comments = document.getElementById('comments').value.trim();
+
+                // Simple validation
+                if(name === '' || email === '' || rating === '') {
+                    alert('Please fill out all required fields.');
+                    return;
+                }
+
+                // Confirmation message
+                alert(`Thank you, ${name}, for your feedback on Classic Coca-Cola!`);
+
+                // Reset the form
+                feedbackForm.reset();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Global Navigation -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="corporate.html">Corporate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Feedback Section -->
+    <section class="feedback">
+        <h1>Customer Feedback</h1>
+        <p>We value your thoughts! Please let us know what you think about Classic Coca-Cola.</p>
+
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="rating">Rate Classic Coca-Cola:</label>
+            <select id="rating" name="rating" required>
+                <option value="">--Choose--</option>
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="5" placeholder="Your feedback..."></textarea>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 The Coca-Cola Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

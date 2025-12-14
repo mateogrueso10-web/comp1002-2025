@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Coca-Cola | Support</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- Global Navigation -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="corporate.html">Corporate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Support Section -->
+    <section class="support">
+        <h1>Customer Support</h1>
+        <p>We’re here to help! Find answers to common questions or contact us directly.</p>
+
+        <!-- FAQs -->
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li><strong>Where can I buy Classic Coca-Cola?</strong>  
+                You can find Classic Coca-Cola at most grocery stores, convenience stores, and online retailers.</li>
+            <li><strong>How should I store my Coke?</strong>  
+                Keep it in a cool, dry place. Refrigerate for the best taste, especially after opening.</li>
+            <li><strong>Is Classic Coca-Cola still made with the original formula?</strong>  
+                Yes! Our classic formula has been perfected over the years to deliver the same refreshing taste loved worldwide.</li>
+            <li><strong>Can I contact customer service directly?</strong>  
+                Yes! Use the contact form below or reach out via email or phone.</li>
+        </ul>
+
+        <!-- Contact Info -->
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:support@classiccoke.com">support@classiccoke.com</a></p>
+        <p>Phone: +1 (800) 123-4567</p>
+        <p>Address: The Coca-Cola Company, 1 Coca-Cola Plaza, Atlanta, GA, USA</p>
+
+        <!-- Optional Contact Form -->
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..."></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 The Coca-Cola Company. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional JS for form interaction -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you! Your message has been sent to Classic Coca-Cola support.');
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
